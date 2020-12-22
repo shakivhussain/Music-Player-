@@ -38,7 +38,7 @@ public class videoPlayer extends AppCompatActivity {
         MediaController mediaController = new MediaController(this);
         mediaController.setAnchorView(videoView);
 
-        videoView.setMediaController(mediaController);
+        videoView.setMediaController( mediaController );
         videoView.setVideoPath(String.valueOf(MainActivity.fileArrayList.get(position)));
         videoView.requestFocus();
 
