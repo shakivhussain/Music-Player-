@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
 
         File listFile[] = directory.listFiles();
 
-        if (listFile != null && listFile.length >0){
+        if (listFile != null && listFile.length >0 ){
 
             for (int i=0; i<listFile.length; i++){
 
@@ -117,6 +117,7 @@ public class MainActivity extends AppCompatActivity {
                         }
 
                         if (boolean_permission){
+
                             boolean_permission = false;
                         }
                         else {
@@ -128,5 +129,5 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return fileArrayList;
-    }
+    }   
 }

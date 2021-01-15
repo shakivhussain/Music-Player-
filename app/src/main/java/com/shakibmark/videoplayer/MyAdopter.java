@@ -22,7 +22,7 @@ public class MyAdopter extends RecyclerView.Adapter<MyAdopter.VideoHolder> {
 
     private Context context;
     ArrayList<File> videoArrayList;
-    int a;
+
 
     public MyAdopter(Context context, ArrayList<File> videoArrayList) {
         this.context = context;

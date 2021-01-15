@@ -11,7 +11,7 @@ import android.widget.VideoView;
 public class videoPlayer extends AppCompatActivity {
 
     VideoView videoView;
-    int position = -1;
+    int position ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,7 @@ public class videoPlayer extends AppCompatActivity {
         // This Line Use For Full Screen Window
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        position = getIntent().getIntExtra("position",-1);
+        position = getIntent().getIntExtra("position", -1   );
         getSupportActionBar().hide();
         
         playVideo();
@@ -53,7 +53,6 @@ public class videoPlayer extends AppCompatActivity {
         videoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
-
                 videoView.setVideoPath(String.valueOf(MainActivity.fileArrayList.get(position = position +1)));
                 videoView.start();
 
